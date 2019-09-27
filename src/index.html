@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PageConstructor</title>
+  <link rel='stylesheet' href='https://cdn.materialdesignicons.com/4.4.95/css/materialdesignicons.min.css'>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section id="app">
+  <nav>
+    <section class="wrapper">
+      <div class="brand">
+      <img src="https://i.ibb.co/C5bW3DL/brand-dosi.png" alt="Logo DOSI"/>
+    </div>
+    <ul class="navbar">
+      <li class="item">
+        <a href="#" class="link" @click.prevent="showModal">Como vai funcionar?</a>
+      </li>
+    </ul>
+    </section>
+  </nav>
+  <main>
+    <section class="landing-wrapper">
+      <div class="messeger">
+        <h1>Olá somos a <strong>{{name}}</strong> e estamos construindo algo incrível!</h1>
+        <p>Estamos trabalhando duro para construir uma experiência diferenciada no ramo da farmácia para facilitar a sua comodidade e forma como se faz compras de produtos farmacêuticos na “internet”, trazendo de forma descomplicada e simples.</p>
+      </div>
+      <div class="ilustration">
+         <img src="https://i.ibb.co/QrPHxm9/teste.png" alt="Content Constructor">
+      </div>
+    </section>
+    <span class="section-two">
+      <section class="service-wrapper">
+      <img src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/content_vbqo.svg" alt="Construcao"/>
+      <h2>Alguns dos processos que estamos construindo:</h2>
+        <ul>
+          <li>
+            <i class="mdi mdi-truck-fast mdi-48px"></i>
+            Compras e entregas sem sair do seu conforto;
+          </li>
+          <li>
+            <i class="mdi mdi-shield-lock mdi-48px"></i>
+            Segurança e transparência no processo de venda;
+          </li>
+          <li>
+            <i class="mdi mdi-cellphone-information mdi-48px"></i>
+            Informações sobre os produtos farmacêuticos;
+          </li>
+          <li>
+            <i class="mdi mdi-package-variant-closed mdi-48px"></i>
+            Acompanhamento de pedidos em tempo real;
+          </li>
+          <li>
+            <i class="mdi mdi-home-group mdi-48px"></i>
+            Centralização de diversas farmácias para o melhor preço;
+          </li>
+        </ul>
+    </section>
+    </span>
+  </main>
+</section>
+<span id="modal">
+  <transition name="fade" apper>
+      <div class="modal" v-if="modal">
+       <span @click="modal=!modal"></span>
+      <div class="modal-content">
+         <img src="https://i.ibb.co/C5bW3DL/brand-dosi.png" alt="Logo DOSI"/>
+          <p>
+            A DOSI e uma projeto para impulsionar o ramo farmacêutico, para facilitar a experiência dos usuários em compras online farmacêutico.
+  Visando sempre o bem-estar dos nossos clientes.
+          </p>
+          <h3>Então se você quer ser avisado quando a aplicação ficar pronta, só colocar seu e-mail que avisaremos!</h3>
+        <div class="form-control">
+          <input type="email" class="input-control"/>
+          <button class="btn">Me avisar!</button>
+        </div>
+
+      </div>
+    </div>
+  </transition>
+</span>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js'></script>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
