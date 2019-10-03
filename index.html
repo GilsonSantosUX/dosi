@@ -75,7 +75,7 @@
           <h3>Então se você quer ser avisado quando a aplicação ficar pronta, só colocar seu e-mail que avisaremos!</h3>
         <div class="form-control">
           <input type="email" class="input-control"/>
-          <button class="btn">Me avisar!</button>
+          <button class="btn" @click.prevent="saveEmail">Me avisar!</button>
         </div>
 
       </div>
@@ -86,6 +86,5 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js'></script>
   <script  src="./script.js"></script>
-
 </body>
 </html>

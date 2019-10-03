@@ -15,5 +15,10 @@ const modal = new Vue({
   data: {
     modal: false,
     email: ''
+  },
+  methods:{
+      saveEmail(){
+          this.email = ''
+      }
   }
 })
