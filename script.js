@@ -1,3 +1,4 @@
+const config = { headers: {'Access-Control-Allow-Origin': "*"} }
 const app = new Vue({
   el:'#app',
   data: {
@@ -14,11 +15,13 @@ const modal = new Vue({
   el:'#modal',
   data: {
     modal: false,
-    email: ''
+    telefone: ''
   },
   methods:{
       saveEmail(){
-          this.email = ''
+
+        axios.post("dosi-email.firebaseio.com/usuarios", { telefone: this.telefone })
+            .then((res)=>{ return console.log(res.status) })
       }
   }
 })
