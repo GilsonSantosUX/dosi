@@ -71,16 +71,19 @@
             <img src="https://i.ibb.co/C5bW3DL/brand-dosi.png" alt="Logo DOSI"/>
             <span class="modal-close" @click="modal=!modal"><i class="mdi mdi-close mdi-24px"></i></span>
         </div>
-          <p>
-            A DOSI e um projeto para impulsionar o ramo farmacêutico, para facilitar a experiência dos usuários em compras online.
-  Visando sempre o bem-estar dos nossos clientes.
-          </p>
-          <h3>Você pode entrar em contato com nossa equipe de vendas e fazer seu pedido, rápido e fácil!</h3>
+            <p>
+                A DOSI e um projeto para impulsionar o ramo farmacêutico, para facilitar a experiência dos usuários em compras online.
+    Visando sempre o bem-estar dos nossos clientes.
+            </p>
+            <h3>Você pode entrar em contato com nossa equipe de vendas e fazer seu pedido, rápido e fácil!</h3>
+            
         <div class="form-control">
           <input type="text" class="input-control" v-model="telefone" placeholder="(00) 000000-0000"/>
           <button class="btn" @click.prevent="saveEmail">Me avisar!</button>
         </div>
-
+        <li class="whats">
+            <a href="https://api.whatsapp.com/send?phone=5567998378383&text=Medicamentos%20manipulados%20(DOSI)" class="link" ><i class="mdi mdi-whatsapp mdi-24px"></i> Oque podemos fazer por você?</a>
+        </li>
       </div>
     </div>
   </transition>

@@ -238,7 +238,7 @@ main {
 .modal > .modal-content {
   position: absolute;
   width: 650px;
-  height: 450px;
+  min-height: 450px;
   border-radius: 8px;
   background: #FFF;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
@@ -288,6 +288,24 @@ main {
   color: #0ABBB5;
   line-height: 1.85rem;
   margin-bottom: 32px;
+}
+
+.whats{
+    margin-top: 16px;
+}
+.whats .link{
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px #0ABBB5 solid;
+    background: #078b86;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whats .link .mdi{
+    color: #fff;
 }
 
 .form-control {
